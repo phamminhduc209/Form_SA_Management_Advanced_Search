@@ -13,25 +13,14 @@
     "use strict";
   /* ==================================================== */
 
-  /*
-   * 1. Slide Carousel
-  */
-  $(document).ready(function() {
-    $('.owl-carousel').each(function(index, el) {
-      var config = $(this).data();
-      config.navText = ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'];
-      config.smartSpeed="800";
-      
-      if($(this).hasClass('owl-style2')){
-        config.animateOut='fadeOut';
-        config.animateIn='fadeIn';    
-      }
-      if($(this).hasClass('dotsData')){
-        config.dotsData="true";
-      }
-      $(this).owlCarousel(config);
-    });
+  $(".select2").select2({
+    placeholder: "Please choose",
   });
+  // $(document).ready(function() {
+  //     $('.select2').each(function(index, el) {
+  //    var config = $(this).data();
+  //     });
+  // });
 
   /*
    * 2. Scroll to Top
@@ -47,30 +36,6 @@
     $('body,html').animate({
       scrollTop : 0
     }, 'slow');
-  });
-
-  /*
-   * 3. Sticky Menu
-  */
-  $('.fixed').sticky({ topSpacing: 0 });
-
-  /*
-   * 7. Main Menu
-  */
-  $(".nav-toogle").on( 'click', function() {
-    $(this).toggleClass('has-open');
-    $(".menu").toggleClass("has-open");
-    $("body").toggleClass("menu-open");
-  });
-
-  /*
-   * 7. Main Menu
-  */
-  $(document).ready(function(){
-    $('.menu ul li.parent').append('<span class="plus"></span>');
-    $('.menu ul li.parent .plus').click(function(){
-      $(this).toggleClass('open').siblings('.submenu').slideToggle();
-    });
   });
 
 

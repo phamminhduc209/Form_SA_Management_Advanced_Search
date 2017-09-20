@@ -9,20 +9,52 @@
 	<!-- <link rel="stylesheet" type="text/css" href="lib/bootstrap/bootstrap.min.css"> -->
 	<!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<!-- Font -->
+	<!-- Font Google -->
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=vietnamese" rel="stylesheet">
 	<!-- Font Awesome -->
 	<link rel="stylesheet" type="text/css" href="lib/font-awesome/font-awesome.min.css">
+	<!-- CSS select2 -->
+	<link rel="stylesheet" type="text/css" href="lib/select2/select2.min.css"/>
 </head>
 <body>
 	<header class="header">
+		<ul class="header-fullcolor list-unstyled">
+		    <li>
+		        <div class="bg-1"></div>
+		        <div class="bg-2"></div>
+		        <div class="bg-3"></div>
+		        <div class="bg-4"></div>
+		        <div class="bg-5"></div>
+		        <div class="bg-6"></div>
+		        <div class="bg-7"></div>
+		    </li>
+		    <li>
+		        <div class="bg-1"></div>
+		        <div class="bg-2"></div>
+		        <div class="bg-3"></div>
+		        <div class="bg-4"></div>
+		        <div class="bg-5"></div>
+		        <div class="bg-6"></div>
+		        <div class="bg-7"></div>
+		    </li>
+		    <li>
+		        <div class="bg-1"></div>
+		        <div class="bg-2"></div>
+		        <div class="bg-3"></div>
+		        <div class="bg-4"></div>
+		        <div class="bg-5"></div>
+		        <div class="bg-6"></div>
+		        <div class="bg-7"></div>
+		    </li>
+		</ul><!-- header-fullcolor -->
 		<div class="inner">
 			<div class="logo">
 				<h1 style="display: none;">Logo</h1>
 				<img src="img/logo.jpg" srcset="img/logo@2x.jpg 2x, img/logo@3x.jpg 3x" class="logo">
 			</div><!-- logo -->
-		</div>
-	</header><!-- header -->
+		</div><!-- inner -->
+	</header>
+	<!-- header -->
 	
 	<div class="wrapper">
 		<div class="block block_about">
@@ -48,40 +80,290 @@
 		</div><!-- block_about -->
 		<div class="block block_form">
 			<div class="inner">
-				<div class="block-title">
-					<h3 class="title">
-						<span>THÔNG TIN CƠ BẢN / Basic Info</span>
-						<span class="font-fa"><img src="img/basic-info.svg" alt=""></span>
-					</h3>
-				</div>
-				<div class="block-content">
-					<div class="form-group">
-						<label for="lastname" class="title_sub">HỌ / Last Name <span class="requiment">*</span></label>
-						<div class="col-sm-10">
-							<input type="email" class="form-control" id="lastname" placeholder="Nguyen Quoc">
+				<form action="#" method="post" name="ev-cd-information" class="ev-cd-information">
+					<div class="form_box">
+						<div class="block-title">
+							<h3 class="title">
+								<span>THÔNG TIN CƠ BẢN / Basic Info</span>
+								<span class="font-fa"><img src="img/basic-info.svg" alt=""></span>
+							</h3>
 						</div>
-					</div>
-					<div class="form-group">
-						<label for="firstname" class="title_sub">TÊN / First Name <span class="requiment">*</span></label>
-						<div class="col-sm-10">
-							<input type="email" class="form-control" id="firstname" placeholder="Hoang">
+						<div class="block-content">
+							<div class="form-group">
+								<label for="Lastname" class="title_sub">HỌ / Last Name <span class="requiment">*</span></label>
+								<div class="ev_input">
+									<input type="text" class="form-control" id="Lastname" placeholder="Nguyen Quoc">
+								</div>
+							</div><div class="form-group">
+								<label for="Firstname" class="title_sub">TÊN / First Name <span class="requiment">*</span></label>
+								<div class="ev_input">
+									<input type="text" class="form-control" id="Firstname" placeholder="Hoang">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="Fullname-vn" class="title_sub">HỌ &amp; TÊN TIẾNG VIỆT / Full Name in Vietnamese <span class="requiment">*</span></label>
+								<div class="ev_input">
+									<input type="text" class="form-control" id="Fullname-vn" placeholder="Nguyễn Quốc Hoàng">
+								</div>
+							</div>
 						</div>
-					</div>
-					<div class="form-group">
-						<label for="fullname-vn" class="title_sub">HỌ &amp; TÊN TIẾNG VIỆT / Full Name in Vietnamese <span class="requiment">*</span></label>
-						<div class="col-sm-10">
-							<input type="email" class="form-control" id="fullname-vn" placeholder="Nguyễn Quốc Hoàng">
+					</div><!-- form_box -->
+					<div class="form_box">
+						<div class="block-title">
+							<h3 class="title">
+								<span>THÔNG TIN CÁ NHÂN / Personal Info</span>
+								<span class="font-fa"><img src="img/personal-info.svg" alt=""></span>
+							</h3>
 						</div>
-					</div>
-				</div>
-			</div>
+						<div class="block-content">
+							<div class="form-group">
+								<label for="Ethnic" class="title_sub">DÂN TỘC / Ethnic <span class="requiment">*</span></label>
+								<div class="ev_input">
+									<input type="text" class="form-control" id="Ethnic" placeholder="Kinh">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="DateofBirth" class="title_sub">NGÀY SINH / Date of Birth <span class="requiment">*</span></label>
+								<div class="ev_input">
+									
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="PlaceofBirth" class="title_sub">NƠI SINH / Place of Birth <span class="requiment">*</span></label>
+								<div class="ev_input">
+									<input type="text" class="form-control" id="PlaceofBirth" placeholder="Hà Nội">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="MaritalStatus" class="title_sub">TÌNH TRẠNG HÔN NHÂN / Marital Status <span class="requiment">*</span></label>
+								<div class="ev_input">
+									
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="Gender" class="title_sub">GIỚI TÍNH / Gender <span class="requiment">*</span></label>
+								<div class="ev_input">
+									
+								</div>
+							</div>
+						</div>
+					</div><!-- form_box -->
+					<div class="form_box">
+						<div class="block-title">
+							<h3 class="title">
+								<span>THUẾ &amp; BẢO HIỂM / Tax &amp; Insurance</span>
+								<span class="font-fa"><img src="img/tax-insurance.svg" alt=""></span>
+							</h3>
+						</div>
+						<div class="block-content">
+							<div class="form-group">
+								<label for="PersonalTaxCode" class="title_sub">MÃ SỐ THUẾ CÁ NHÂN / Personal Tax Code</label>
+								<div class="ev_input">
+									<input type="text" class="form-control" id="PersonalTaxCode" placeholder="4423898335">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="NumberofDependents" class="title_sub">SỐ NGƯỜI PHỤ THUỘC / Number of Dependents</label>
+								<div class="ev_input">
+									<input type="text" class="form-control" id="NumberofDependents" placeholder="0">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="IDNumber" class="title_sub">SỐ CMND / ID Number <span class="requiment">*</span></label>
+								<div class="ev_input">
+									<input type="text" class="form-control" id="IDNumber" placeholder="0669 3424 8895">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="DateofIssue" class="title_sub">NGÀY CẤP / Date of Issue <span class="requiment">*</span></label>
+								<div class="ev_input">
+									<input type="text" class="form-control" id="DateofIssue" placeholder="16-03-2014">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="DateofIssue2" class="title_sub">NƠI CẤP / Date of Issue <span class="requiment">*</span></label>
+								<div class="ev_input">
+									<input type="text" class="form-control" id="DateofIssue2" placeholder="CA TP Hà Nội">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="SocialInsuranceNote" class="title_sub">SỔ BHXH / Social Insurance Note</label>
+								<div class="ev_input">
+
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="SocialInsuranceNo" class="title_sub">SỐ SỔ BHXH / Social Insurance No.</label>
+								<div class="ev_input">
+									<input type="email" class="form-control" id="SocialInsuranceNo" placeholder="3326 4325 6546">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="ClinicPlace" class="title_sub">NƠI ĐK KHÁM CHỮA BỆNH BHYT / Clinic Place</label>
+								<div class="ev_input">
+
+								</div>
+							</div>
+						</div>
+					</div><!-- form_box -->
+					<div class="form_box">
+						<div class="block-title">
+							<h3 class="title">
+								<span>THÔNG TIN LIÊN HỆ / Contact</span>
+								<span class="font-fa"><img src="img/contact.svg" alt=""></span>
+							</h3>
+						</div>
+						<div class="block-content">
+							<div class="form-group">
+								<label for="CellPhone" class="title_sub">DI ĐỘNG / Cell Phone <span class="requiment">*</span></label>
+								<div class="ev_input">
+									<input type="email" class="form-control" id="CellPhone" placeholder="0909454502">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="HomePhone" class="title_sub">ĐIỆN THOẠI NHÀ RIÊNG / Home Phone</label>
+								<div class="ev_input">
+									<input type="email" class="form-control" id="HomePhone" placeholder="028 3911 1489">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="PersonalEmail" class="title_sub">EMAIL CÁ NHÂN / Personal Email <span class="requiment">*</span></label>
+								<div class="ev_input">
+									<input type="email" class="form-control" id="PersonalEmail" placeholder="yenchibi@gmail.com">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="PermanentAddress" class="title_sub">ĐỊA CHỈ THƯỜNG TRÚ / Permanent Address</label>
+								<div class="ev_input">
+									<input type="email" class="form-control" id="PermanentAddress" placeholder="09 Đinh Tiên Hoàng, P. Đakao, Q. 1, TP. HCM">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="TemporaryAddress" class="title_sub">ĐỊA CHỈ TẠM TRÚ / Temporary Address</label>
+								<div class="ev_input">
+									<input type="email" class="form-control" id="TemporaryAddress" placeholder="90 Nguyễn Đình Chiểu,  P. Đakao, Q. 1, TP. HCM">
+								</div>
+							</div>
+						</div>
+					</div><!-- form_box -->
+					<div class="form_box">
+						<div class="block-title">
+							<h3 class="title">
+								<span>THÔNG TIN KHÁC / Other</span>
+								<span class="font-fa"><img src="img/Other.svg" alt=""></span>
+							</h3>
+						</div>
+						<div class="block-content">
+							<div class="form-group">
+								<label for="TypeofVehicle" class="title_sub">LOẠI XE / Type of Vehicle</label>
+								<div class="ev_input">
+									<input type="email" class="form-control" id="TypeofVehicle" placeholder="Honda - Air Blade">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="VehiclesPlateNo" class="title_sub">BIỂN SỐ XE / Vehicle's Plate No.</label>
+								<div class="ev_input">
+									<input type="email" class="form-control" id="VehiclesPlateNo" placeholder="51P9 - 74499">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="YourHobbies" class="title_sub">SỞ THÍCH / Your Hobbies</label>
+								<div class="ev_input">
+									<input type="email" class="form-control" id="YourHobbies" placeholder="Nhảy dây, đá cầu, búng thun…">
+								</div>
+							</div>
+						</div>
+					</div><!-- form_box -->
+					<div class="form_box">
+						<div class="block-content">
+							<div class="form-group">
+								<div class="group-btn">
+									<button type="submit" class="ev-btn ev-btn-save">Save</button>
+									<button type="reset" class="ev-btn ev-btn-cancel">Cancel</button>
+								</div>
+							</div>
+						</div>
+					</div><!-- form_box -->
+				</form>
+			</div><!-- inner -->
 		</div><!-- block_form -->
 	</div>
 	<!-- wrapper -->
 
+	<footer class="footer">
+		<div class="inner">
+			<div class="ft-top">
+				<div class="inner-row">
+					<div class="ev-address">
+						<address>
+							<p class="name-office">Ho Chi Minh office</p>
+							<p class="info-office">
+								<span>4th Floor, SaiGon Finance Center Building</span>
+								<span>9 Dinh Tien Hoang Street, Da Kao Ward, District 1, HCMC.</span>
+								<span>Tel: 028 3911 1489  Fax: 028 3911 8767</span>
+							</p>
+						</address>
+					</div><!-- ev-address -->
+					<div class="ev-address">
+						<address>
+							<p class="name-office">Ha Noi office</p>
+							<p class="info-office">
+								<span>9th Floor, Viet A Building</span>
+								<span>Duy Tan Street, Dich Vong Ward, Cau Giay Dist, Ha Noi.</span>
+								<span>Tel : 024 3795 7578</span>
+							</p>
+						</address>
+					</div><!-- ev-address -->
+					<div class="ev-address">
+						<address>
+							<p class="name-office">Da Nang office</p>
+							<p class="info-office">
+								<span>7th Floor, Vinh Trung Plaza</span>
+								<span>255-257 Hung Vuong Street, Hai Chau District, Da Nang.</span>
+								<span>Tel : 0236 365 1911</span>
+							</p>
+						</address>
+					</div><!-- ev-address -->
+				</div>
+			</div><!-- ft-top -->
+			<div class="ft-bottom">
+				<ul class="link widget widget-link">
+					<li>
+						Website: <a href="https://evolable.asia" title="https://evolable.asia">www.evolable.asia</a>
+					</li>
+					<li>|</li>
+					<li>
+						Jobs site: <a href="https://jobs.evolable.asia" title="https://jobs.evolable.asia">www.jobs.evolable.asia</a>
+					</li>
+				</ul><!-- link widget -->
+				<ul class="link widget widget-social">
+					<li>
+						<a href="https://facebook.com" title="Facebook" class="social-facebook"><i class="fa fa-facebook"></i></a>
+					</li>
+					<li>
+						<a href="https://linkedin.com" title="Linkedin" class="social-linkedin"><i class="fa fa-linkedin"></i></a>
+					</li>
+					<li>
+						<a href="https://youtube.com" title="Youtube" class="social-youtube"><i class="fa fa-youtube-play"></i></a>
+					</li>
+					<li>
+						<a href="https://instagram.com" title="Instagram" class="social-instagram"><i class="fa fa-instagram"></i></a>
+					</li>
+				</ul><!-- link widget -->
+				<p class="copy-right">Copyright © Evolable Asia Co., Ltd. All Right Reserved.</p>
+			</div>
+		</div>
+	</footer>
+	<!-- footer -->
+
 	<!-- JS -->
 	<script src="js/jquery.min.js"></script>
-	<!-- JS Bootstrap -->
-	<!-- <script src="lib/bootstrap/bootstrap.min.js"></script> -->
+	<!-- JS select2 -->
+	<script src="lib/select2/select2.min.js"></script>
+	<!-- JS placeholders -->
+	<script src="lib/placeholders/placeholders.min.js"></script>
+	<!-- JS common -->
+	<script src="js/common.js"></script>
+
 </body>
 </html>
