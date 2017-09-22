@@ -98,14 +98,14 @@ p {
 /* table-customize */
 .table-customize > thead > tr > th,
 .table-customize > tbody > tr > th {  
-	background-color: #cebea4;
+	background-color: #d5e5d6;
 	color: #333;
 	white-space: nowrap;
 }
 .table-customize > thead > tr > td,
 .table-customize > tbody > tr > td { 
-	border-top: 1px solid #d5e5d6;
-	border-bottom: 1px solid #d5e5d6;
+	border-top: 1px solid #ccced9;
+	border-bottom: 1px solid #ccced9;
 	width: auto;
 }
 
@@ -139,3 +139,33 @@ p {
 	color: #595757;
 	font-weight: normal;
 }
+
+.fa-star {
+  width: 18px;
+  height: 19px;
+  font-family: FontAwesome;
+  font-size: 19px;
+  text-align: left;
+  color: #2e7d32;
+}
+
+input[type='checkbox'] {
+	/* Hide the checkbox input ui */
+	opacity: 0;
+}
+
+/* Apply custom images - size your images according to text and stuff */
+/* Take any custom image you want and encode it with http://websemantics.co.uk/online_tools/image_to_data_uri_convertor/ or alike */
+input[type='checkbox'] + span{
+	background: url(../img/check.png) no-repeat center left;
+	padding-left: 18px;
+	margin-left: -18px;
+}
+input[type='checkbox']:checked + span{
+	background: url(../img/checked.png) no-repeat center left;
+}
+
+/* Compatibility: pretty much all browsers except IE prior version 8 */
+
+/* The following styles are for this example only and do not affect the functionality */
+/*span { color: #fb3b3b }*/
