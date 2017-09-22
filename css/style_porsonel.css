@@ -1,0 +1,140 @@
+* {
+	margin: 0;
+	padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+	background-color: #ffffff;
+	font-family: "Roboto", sans-serif;
+	color: #595758;
+	font-weight: normal;
+	font-style: inherit;
+	font-size: 16px;
+	line-height: 1.5;
+	max-width: 1920px;
+	margin: 0 auto;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+}
+
+.box {
+	margin-bottom: 35px;
+	position: relative;
+}
+
+.box-main {
+	padding: 30px;
+    background-color: #ffffff;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.5);
+}
+
+.box-head .box-content {
+	width: 255px;
+	height: auto;
+	float: right;
+	text-align: center;
+}
+.box-head .box-av-name .avarta {
+	width: 120px;
+	height: 120px;
+	object-fit: contain;
+	box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.5);
+	border-radius: 50%;
+	overflow: hidden;
+	text-align: center;
+	margin: 0 auto;
+	margin-bottom: 10px;
+}
+.box-head .box-av-name .avarta img {
+	max-width: 120px;
+	max-height: 120px;
+}
+.box-head .box-av-name .name {
+	font-family: 'Roboto';
+	font-size: 18px;
+	line-height: 1.5;
+	color: #575757;
+}
+.box-head .line-verticle {
+	display: block;
+	width: 1px;
+	height: 172px;
+	background-color: #ccced9;
+	margin: 0 auto;
+}
+.box-head .box-list-personel {
+	margin-top: -5px;
+}
+.box-head .box-list-personel p {
+	font-family: 'Roboto';
+	font-size: 15px;
+	color: #575757;
+	line-height: 1.47;
+	margin-bottom: 10px;
+}
+.box-head .box-list-personel p:last-child {
+	margin-bottom: 0;
+}
+.box-head .box-list-personel label {
+	margin-bottom: 0;
+}
+
+.box-content .table-name {
+	font-family: 'Roboto';
+	font-size: 20px;
+	line-height: 1.5;
+	margin-bottom: 10px;
+}
+
+/* table-customize */
+.table-customize > thead > tr > th,
+.table-customize > tbody > tr > th {  
+	background-color: #cebea4;
+	color: #333;
+	white-space: nowrap;
+}
+.table-customize > thead > tr > td,
+.table-customize > tbody > tr > td { 
+	border-top: 1px solid #d5e5d6;
+	border-bottom: 1px solid #d5e5d6;
+	width: auto;
+}
+
+.table-customize > thead > tr > th:first-child,
+.table-customize > tbody > tr > td:first-child { 
+	border-left: 1px solid #d5e5d6;
+}
+.table-customize > thead > tr > th:last-child,
+.table-customize > tbody > tr > td:last-child { 
+	border-right: 1px solid #d5e5d6;
+}
+.table.table-customize>thead>tr>th {
+    vertical-align: bottom;
+    border-bottom: 1px solid #d5e5d6;
+    background-color: #000b40;
+    ont-family: 'Roboto';
+	font-size: 14px;
+	line-height: 1.5;
+	color: #ffffff;
+	font-weight: normal;
+}
+.table.table-style1>thead>tr>th {
+	background: #d5e5d6;
+	color: #595757;
+	font-weight: 500;
+}
+.table-customize tr td {
+	font-family: 'Roboto';
+	font-size: 14px;
+	line-height: 1.5;
+	color: #595757;
+	font-weight: normal;
+}
