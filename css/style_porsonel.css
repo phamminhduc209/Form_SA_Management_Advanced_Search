@@ -150,12 +150,8 @@ p {
 }
 
 input[type='checkbox'] {
-	/* Hide the checkbox input ui */
 	opacity: 0;
 }
-
-/* Apply custom images - size your images according to text and stuff */
-/* Take any custom image you want and encode it with http://websemantics.co.uk/online_tools/image_to_data_uri_convertor/ or alike */
 input[type='checkbox'] + span{
 	background: url(../img/check.png) no-repeat center left;
 	padding-left: 18px;
@@ -165,7 +161,94 @@ input[type='checkbox']:checked + span{
 	background: url(../img/checked.png) no-repeat center left;
 }
 
-/* Compatibility: pretty much all browsers except IE prior version 8 */
+.table-button .btn-danger {
+	width: 255px;
+	height: 34px;
+	background-color: #ffffff;
+  	border: solid 1px #e91e63;
+	border-radius: 0;
+	font-family: 'Roboto';
+	font-size: 15px;
+	font-weight: 500;
+	text-align: center;
+	color: #e91e63;
+	margin-left: 30px;
+	outline: none;
+}
+.table-button .btn-danger:focus {
+	outline: none;
+}
+.table-button .btn-danger:first-child {
+	margin-left: 0;
+}
+.btn {
+  position: relative;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+.btn-1e:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.btn-1e:hover:after {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+  transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+}
+.btn-1e:after {
+  background: #e91e63;
+  color: #fff;
+}
+.btn-1e:hover {
+  color: #fff;
+}
 
-/* The following styles are for this example only and do not affect the functionality */
-/*span { color: #fb3b3b }*/
+#ReportAsBroken .modal-dialog {
+	width: 350px;
+}
+#ReportAsBroken .modal-content {
+	border-radius: 0;
+}
+#ReportAsBroken .modal-dialog .modal-header {
+	padding: 0;
+	border: none;
+	background-color: #000b40;
+}
+#ReportAsBroken .modal-dialog .modal-title {
+	text-align: center;
+	font-family: 'Roboto';
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 37px;
+	color: #ffffff;
+}
+#ReportAsBroken .modal-body {
+	padding: 0;
+	padding: 30px 30px 30px;
+}
+#ReportAsBroken .modal-footer {
+	padding: 0;
+	padding: 0 30px 30px;
+	border-top: none;
+}
