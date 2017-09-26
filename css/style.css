@@ -56,6 +56,7 @@ body {
   position: absolute;
   top: 2px;
   right: -185px;
+  display: none;
 }
 .alert-required img {
   margin-right: 15px;
@@ -90,6 +91,9 @@ body {
   border-right: 10px solid #fff;
   border-top: 7px solid transparent;
   border-bottom: 7px solid transparent;
+}
+.alert-required.active {
+  display: block;
 }
 /* Button */
 .group-btn {

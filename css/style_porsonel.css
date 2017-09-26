@@ -252,3 +252,31 @@ input[type='checkbox']:checked + span{
 	padding: 0 30px 30px;
 	border-top: none;
 }
+#ReportAsBroken .modal-footer .btn {
+	width: 105px;
+	border-radius: 0;
+	border: none;
+	font-family: 'Roboto';
+	font-size: 15px;
+	font-weight: 500;
+	line-height: 1.6;
+	text-align: center;
+	color: #ffffff;
+}
+#ReportAsBroken .modal-footer .btn:focus {
+	outline-: none !important;
+}
+#ReportAsBroken .modal-footer .btn-yes {
+	background-color: #e91e63;
+}
+#ReportAsBroken .modal-footer .btn-cancel {
+	background-color: rgba(87, 87, 87, 0.5);
+}
+#ReportAsBroken .modal-header .close {
+	margin-top: 0;
+    font-size: 35px;
+    text-align: left;
+    color: #ffffff;
+    opacity: 1;
+    margin-right: 5px;
+}

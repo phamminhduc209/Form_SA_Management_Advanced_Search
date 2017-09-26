@@ -74,9 +74,9 @@
 				</div>
 			</div>
 		</div><!-- block_about -->
-		<div class="block block_form">
+		<div class="block block_form wizard" novalidate="novalidate">
 			<div class="inner">
-				<form action="#" method="post" name="ev-cd-information" class="ev-cd-information">
+				<form action="registration_send.php" method="post" name="ev-cd-information" class="ev-cd-information">
 					<div class="form_box">
 						<div class="block-title">
 							<h3 class="title">
@@ -86,15 +86,17 @@
 						</div>
 						<div class="block-content">
 							<div class="form-group">
+								<input type="text" id="website" name="" value="" style="display: none;">
 								<label for="Lastname" class="title_sub">HỌ / Last Name<span class="requiment">*</span></label>
 								<div class="group-input">
-									<input type="text" class="form-control" id="Lastname" placeholder="Nguyen Quoc">
+									<input type="text" class="form-control requiered" id="Lastname" value="" placeholder="Nguyen Quoc">
 									<p class="alert-required">
 										<img src="img/fa-exclamation-circle-small.png" alt="required">
 										<span class="required-text">This field is required.</span>
 									</p>
 								</div>
-							</div><div class="form-group">
+							</div>
+							<div class="form-group">
 								<label for="Firstname" class="title_sub">TÊN / First Name<span class="requiment">*</span></label>
 								<div class="group-input">
 									<input type="text" class="form-control" id="Firstname" placeholder="Hoang">
@@ -323,7 +325,7 @@
 						<div class="block-content">
 							<div class="form-group">
 								<div class="group-btn">
-									<button type="submit" onclick="validatetion()" class="ev-btn ev-btn-save">Save</button>
+									<button type="submit" class="ev-btn ev-btn-save">Save</button>
 									<button type="reset" class="ev-btn ev-btn-cancel">Cancel</button>
 								</div>
 							</div>
@@ -407,13 +409,40 @@
 	<script src="js/common.js"></script>
 
 	<script>
-		function validatetion() {
-			var inpObj = ".required";
-			if ($(inpObj).val() == ''){
-				alert(aaaaaaaa);
+	/*  Wizard */
+	jQuery(function ($) {
+		"use strict";
+		$('form.ev-cd-information').attr('action', 'registration_send.php');
+		$(".block_form").wizard({
+			stepsWrapper: "#form.ev-cd-information",
+			submit: ".submit",
+			beforeSelect: function (event, state) {
+				if ($('input#website').val().length != 0) {
+					return false;
+				}
+				if (!state.isMovingForward)
+					return true;
+				var inputs = $(this).wizard('state').step.find(':input');
+				return !inputs.length || !!inputs.valid();
 			}
-		}
-
+		}).validate({
+			errorPlacement: function (error, element) {
+				if (element.is(':radio') || element.is(':checkbox')) {
+					error.insertBefore(element.next());
+				} else {
+					error.insertAfter(element);
+				}
+			}
+		});
+		//  progress bar
+		$("#progressbar").progressbar();
+		$("#wizard_container").wizard({
+			afterSelect: function (event, state) {
+				$("#progressbar").progressbar("value", state.percentComplete);
+				$("#location").text("(" + state.stepsComplete + "/" + state.stepsPossible + ")");
+			}
+		});
+	});
 	</script>
 
 </body>
